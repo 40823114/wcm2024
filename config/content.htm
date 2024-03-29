@@ -1,6 +1,21 @@
+<h1>About</h1>
+<p><img alt="" height="397" src="/images/鴿子.jpg" width="700"/></p>
+<p></p>
+<p>倉儲: <a href="https://github.com/40823114/wcm2024/">https://github.com/40823114/wcm2024</a></p>
+<p>網頁: <a class="Link--inTextBlock" href="https://40823114.github.io/wcm2024/">https://40823114.github.io/wcm2024</a></p>
+<p>網誌: <a href="https://40823114.github.io/wcm2024/blog" title="https://40823114.github.io/wcm2024/blog">https://40823114.github.io/wcm2024/blog</a></p>
+<p>簡報: <a href="https://40823114.github.io/wcm2024/reveal/index.html">https://40823114.github.io/wcm2024/reveal</a></p>
+<p></p>
+<p></p>
+<p></p>
+<p>本 cmsimde 網際內容管理系統的對應 Template 倉儲:</p>
+<p><a href="https://github.com/mdecycu/cmsimde_site">https://github.com/mdecycu/cmsimde_site</a></p>
+<p>此 Template 將 cmsimde 作為子目錄而非子模組, 使用者可以依照需求自行修改</p>
+<p>倉儲對應網站:<span> </span><a href="https://mde.tw/cmsimde_site">https://mde.tw/cmsimde_site</a></p>
 <h1>Week updated</h1>
 <h2>w1</h2>
 <h2>w2</h2>
+<p>建立個人網站</p>
 <h2>w3</h2>
 <h2>w4</h2>
 <h2>w5</h2>
@@ -76,7 +91,7 @@
 <ul>
 <li>Linus Torvalds 因其對電腦科學和開源軟體的貢獻而獲得了許多榮譽和獎項，包括 Millennium Technology Prize、IEEE電腦先驅獎等。</li>
 </ul>
-<h3><span><span class="ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak" dir="ltr">一般相同專業人士如何利用 git 解決內容管理問題</span></span></h3>
+<h3>一般相同專業人士如何利用 git 解決內容管理問題</h3>
 <p><span><span class="ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak" dir="ltr">ChatGPT的回覆:</span></span></p>
 <p>以下是一般相同專業人士如何利用 Git 解決內容管理問題的方式：</p>
 <h4>1.版本控制：</h4>
@@ -104,6 +119,20 @@
 <li>Git 的分散特性使得團隊的程式碼倉庫可以輕鬆備份到多個地點，確保資料的安全性和可靠性。</li>
 <li>專業人士可以利用 Git 來進行定期備份、緊急復原等操作，保護團隊的重要資料不受損失。<br/><br/></li>
 </ul>
+<h3><span><span class="ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak" dir="ltr">在 Windows 實際 demo git client 與 git server</span></span></h3>
+<p><span>在目錄 y:\tmp 建立 gitproject\repository 與 gitserver\repository </span></p>
+<p><span>在 Y:\tmp\gitproject&gt; git config --global init.defaultBranch main</span></p>
+<p><span>進入 gitproject\repository 目錄, 新增一個目錄名稱為 repo1, 進入 repo1 後執行 git init</span></p>
+<p><span>進入 gitserver\repository 目錄, 新增一個目錄名稱為 repo1, 進入 repo1 後執行 git init --bare</span></p>
+<p><span>在 Y:\tmp\gitproject\repo1 目錄, 建立新檔案 README.md:</span></p>
+<p>: echo "Hello, World!" &gt; README.md</p>
+<p>: git add README.md</p>
+<p>: git commit -m "Initial commit"</p>
+<p>: git remote add origin y:\tmp\gitserver\repository\repo1</p>
+<p>: git push -u origin main</p>
+<p>將 <span>Y:\tmp\gitserver\repository\repo1 複製到 C:\tmp\repository</span></p>
+<p><span>在 C:\tmp\repository&gt; 執行 git clone Y:\tmp\gitserver\repository\repo1</span></p>
+<p></p>
 <h1>cmsimde</h1>
 <p><span style="background-color: #ccffcc;">SMap</span> - SiteMap - 依照階次列出網站的所有頁面.</p>
 <p><span style="background-color: #ccffcc;">EditA</span> - Edit All page - 將所有頁面放入編輯模式中, 主要用來處理頁面搬遷, 刪除或決定衝突頁面內容版本.</p>
